@@ -1,0 +1,33 @@
+package OOP.a_definingClass.testClientBankAccount;
+
+public class ClientBankAccount {
+   private int id;
+   private double balance;
+   private String name;
+
+    public ClientBankAccount setId(int id) {
+        this.id = id;
+        return this;
+    }
+
+    public ClientBankAccount setBalance(double balance) {
+        this.balance = balance;
+        return this;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        this.balance+=amount;
+    }
+    public void withdraw(double amount) {
+        this.balance-=amount;
+    }
+    @Override
+    public String toString(){
+        return String.format( "Accout with id: %d has balance: %.2f", this.id, this.balance );
+
+    }
+}
