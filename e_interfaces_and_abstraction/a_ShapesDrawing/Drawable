@@ -1,0 +1,5 @@
+package OOP.e_interfaces_and_abstraction.a_ShapesDrawing;
+
+public interface Drawable {
+    void draw();
+}
