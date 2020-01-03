@@ -1,0 +1,11 @@
+package OOP.e_interfaces_and_abstraction.d_SayHelloExtend;
+
+public interface Person {
+   public String getName();
+
+    public default String seyHello() {
+       return "Hello";
+    }
+
+
+}
