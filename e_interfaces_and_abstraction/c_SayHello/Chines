@@ -1,0 +1,22 @@
+package OOP.e_interfaces_and_abstraction.c_SayHello;
+
+public class Chines implements Person {
+    private String name;
+
+    public Chines(String name) {
+        this.name = name;
+    }
+
+
+
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public String seyHello() {
+        return "你好";
+    }
+}
