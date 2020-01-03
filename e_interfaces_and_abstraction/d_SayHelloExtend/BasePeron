@@ -1,0 +1,21 @@
+package OOP.e_interfaces_and_abstraction.d_SayHelloExtend;
+
+import OOP.e_interfaces_and_abstraction.c_SayHello.Person;
+
+public abstract  class BasePeron implements Person {
+    private String name;
+
+    public BasePeron(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public String seyHello() {
+        return "Hello";
+    }
+}
