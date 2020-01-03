@@ -1,0 +1,13 @@
+package OOP.e_interfaces_and_abstraction.d_SayHelloExtend;
+
+public class Bulgarian extends BasePeron implements Person {
+
+    public Bulgarian(String name) {
+        super(name);
+    }
+
+    @Override
+    public String seyHello() {
+        return "Здравей";
+    }
+}
