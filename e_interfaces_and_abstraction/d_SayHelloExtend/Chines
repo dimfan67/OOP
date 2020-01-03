@@ -1,0 +1,12 @@
+package OOP.e_interfaces_and_abstraction.d_SayHelloExtend;
+
+public class Chines extends BasePeron implements Person {
+    public Chines(String name) {
+        super(name);
+    }
+
+    @Override
+    public String seyHello() {
+        return "你好";
+    }
+}
