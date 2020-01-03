@@ -1,0 +1,7 @@
+package OOP.e_interfaces_and_abstraction.b_CarShop;
+
+public interface Sellable  extends Car{
+
+    Double getPrice();
+
+}
