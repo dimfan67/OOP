@@ -1,0 +1,23 @@
+package OOP.e_interfaces_and_abstraction.c_SayHello;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Person> people = new ArrayList(){{
+            add(new Bulgarian("Strahil"));
+            add(new European("Filip"));
+            add(new Chines("Chen"));
+            }};
+
+        for (Person person : people) {
+            prinPerso(person);
+
+        }
+    }
+
+    private static void prinPerso(Person person) {
+        System.out.println(person.seyHello());
+    }
+}
