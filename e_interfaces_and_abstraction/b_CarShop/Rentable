@@ -1,0 +1,9 @@
+package OOP.e_interfaces_and_abstraction.b_CarShop;
+
+public interface Rentable extends Car {
+
+
+    Integer getMinRentDay();
+
+    Double getPricePerDay();
+}
