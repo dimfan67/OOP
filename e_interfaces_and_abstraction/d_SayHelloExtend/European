@@ -1,0 +1,14 @@
+package OOP.e_interfaces_and_abstraction.d_SayHelloExtend;
+
+public class European extends BasePeron implements Person {
+    public European(String name) {
+        super(name);
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+
+}
