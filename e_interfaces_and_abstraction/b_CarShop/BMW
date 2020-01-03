@@ -1,0 +1,55 @@
+package OOP.e_interfaces_and_abstraction.b_CarShop;
+
+import OOP.a_Exercise_DefiningClass.carSalesman.Car;
+
+import java.io.Serializable;
+
+public class BMW implements Sellable {
+   private String countryProduced;
+    private String model;
+    private String color;
+    private Integer horsPower;
+    private Double price;
+
+    public BMW( String model, String color, Integer horsPower,String countryProduced, Double price) {
+        this.countryProduced = countryProduced;
+        this.model = model;
+        this.color = color;
+        this.horsPower = horsPower;
+        this.price = price;
+    }
+
+        @Override
+        public String getModel () {
+            return this.model;
+        }
+
+        @Override
+        public String getColor () {
+            return this.color;
+        }
+
+        @Override
+        public Integer getHorsPower () {
+            return this.horsPower;
+        }
+
+        @Override
+        public Double getPrice () {
+            return this.price;
+        }
+
+
+        @Override
+        public String toString () {
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(String.format("%s is %s and have %d horse powers and price is %f ",
+                    this.getModel(), this.getColor(), this.getHorsPower(), this.getPrice())).
+                    append(System.lineSeparator())
+                    .append(String.format("This is %s produced in %s and have %d tires", this.getModel(), this.countryProduced, TIRES));
+            return sb.toString();
+        }
+    }
+
+
