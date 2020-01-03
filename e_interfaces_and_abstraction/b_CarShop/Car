@@ -1,0 +1,10 @@
+package OOP.e_interfaces_and_abstraction.b_CarShop;
+
+public interface Car {
+    Integer TIRES = 4;
+   String getModel();
+    String getColor();
+    Integer getHorsPower();
+
+
+}
