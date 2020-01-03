@@ -1,0 +1,24 @@
+package OOP.e_interfaces_and_abstraction.b_CarShop;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+    Sellable bmw = new BMW("Dog", "Red", 200, "Germany", 11000.1);
+    Rentable audi = new Audi("Lion", "Blue", 100,3, 110.50);
+
+
+    printcarInfo(bmw);
+        printcarInfo(audi);
+
+}
+    public static void printcarInfo(Car car) {
+        System.out.println(String.format(
+                "%s is %s color and have %d horse power",
+                car.getModel(),
+                car.getColor(),
+                car.getHorsPower()));
+        System.out.println(car.toString());
+
+    }
+}
